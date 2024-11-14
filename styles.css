@@ -1,0 +1,124 @@
+body{
+    front-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ header img
+ { 
+    width: 20%;
+    height: auto;
+
+ }
+
+nav{
+    background-color: rgb(238, 168, 17);
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0%;
+    margin: 0;20px;
+}
+
+nav li{
+    padding: 5px;
+}
+
+nav a{
+    color:rgb(247, 247, 247)
+
+}
+ main{
+    padding: 20px;
+ }
+h1{
+    color: rgb(39, 36, 36);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;   /* Permite que os cards que não cabem na linha atual, vão para a linha seguinte */
+    gap: 20px;         /* Espaçamento entre os cards */
+    justify-content: flex-start; /* Alinha os cards à esquerda */
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.card {
+    background-color: #F5E0C3;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 20px); /* Cada card ocupa 50% da largura menos o gap */
+    max-width: 200px;  /* Limita a largura máxima do card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #2C3E50;
+    font-weight: 600;
+}
+
+.card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;  /* Quando a tela for menor que 768px, cada card vai ocupar 100% da largura */
+        max-width: none; /* Remove o limite máximo de largura para cards em telas menores */
+    }
+}
+
+/* Estilos gerais para o main */
+main {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+/* Estilo do container de diálogo */
+.dialogo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Espaçamento entre as mensagens */
+}
+
+/* Estilos gerais para as mensagens */
+.mensagem {
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 70%;  /* Largura máxima das caixas de mensagem */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Estilo para mensagens do usuário */
+.mensagem-usuario {
+    background-color: #d1e7dd; /* Cor de fundo para as mensagens do usuário */
+    align-self: flex-start; /* A mensagem do usuário aparece à esquerda */
+    border-top-left-radius: 0;
+    bord
+
